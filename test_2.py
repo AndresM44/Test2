@@ -12,3 +12,24 @@ Second function will loop through the scores and output the average grade.
 Third function will also loop and find the percentage of grades above average.
 
 """
+
+"""
+# function 1
+file = open(Txt file, rt)
+data = file.read
+numbers = data.split()
+print('Number of grades: ', len(numbers))
+#function 2
+infile = open (Txt file, rt)
+total = 0
+number_of_lines = 0
+line = float(infile.readline())
+while line != "":
+    number_of_lines += 1
+    total += float(line)
+    line = infile.readline()
+    average = total / number_of_lines
+print("Average grade: ", average)
+
+    
+"""
