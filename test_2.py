@@ -33,3 +33,41 @@ print("Average grade: ", average)
 
     
 """
+
+def main():
+    file = open("Final.txt", "rt")
+    data = file.read()
+    numbers = data.split()
+    print("Number of grades: ", len(numbers))
+    infile = open("Final.txt", "rt")
+    total = 0
+    number_of_lines = 0
+    line = float(infile.readline())
+    for i in range(0, 24):
+        number_of_lines += 1
+        total += float(line)
+        line = infile.readline()
+        average = total / number_of_lines
+    print("Average grade: ", average)
+
+# def calculate_percent_above_average():
+#     infile = open("Final.txt", "rt")
+#     total = 0
+#     number_of_lines = 0
+#     line = float(infile.readline())
+#     for i in range(0, 24):
+#         number_of_lines += 1
+#         total += float(line)
+#         line = infile.readline()
+#         average = total / number_of_lines
+#     for average_grade in file:
+#         above_average = 0
+#         average_grade = 0
+#         if average_grade > average:
+#             above_average += 1
+#     print("Percentage of grades above average: {0:.2f}%", above_average)
+#     return above_average
+
+# calculate_percent_above_average()
+main()
+    
